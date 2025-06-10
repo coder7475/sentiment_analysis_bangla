@@ -19,7 +19,7 @@ How does class imbalance in the Bangla Sentiment Dataset affect sentiment classi
 - [Installation](#installation)
 - [Usage](#usage)
 - [Directory Structure](#directory-structure)
-
+- [Data Source](#dataset)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -53,6 +53,56 @@ First run the the setup python file to initialize:
 ```bash
 python3 setup.py
 ```
+### Dataset
+
+The [Bangla Sentiment Dataset](https://data.mendeley.com/datasets/rh67mckhbh/1) is a curated collection of sentiment-rich textual data in Bangla, focused on recent and trending topics. This dataset has been compiled from diverse sources, including Bangladeshi online newspapers, social media platforms, and blogs, ensuring a wide spectrum of language styles and sentiment expressions.
+
+---
+
+#### **Key Features**
+
+---
+
+##### **Focus on Recent Topics**
+The dataset emphasizes contemporary issues, trending discussions, and popular topics in Bangladeshi society. This includes sentiments on political developments, social movements, entertainment, cultural events, and other recent happenings.
+
+---
+
+##### **Source Variety**
+
+- **Online Newspapers**: Articles, editorials, headlines, and reader comments provide structured and semi-formal sentiment data.  
+- **Social Media**: Posts, tweets, and comments reflect informal, conversational language with high emotional expressiveness.  
+- **Blogs**: Opinion pieces and discussions offer detailed and context-rich sentiment content.
+
+---
+
+##### **Sentiment Labels**
+
+Each entry in the dataset is annotated with one of the following sentiment categories:
+
+- **Positive (1)**: Texts expressing happiness, agreement, or optimism.  
+- **Negative (0)**: Texts reflecting criticism, disagreement, or pessimism.  
+- **Neutral (2)**: Texts presenting balanced or factual statements with minimal emotional bias.
+
+---
+
+##### **Linguistic and Stylistic Diversity**
+
+The dataset captures a range of Bangla language variations, including:
+
+- Formal and informal Bangla usage  
+- Regional dialects  
+- Transliterated Bangla (Banglish) commonly used on social media  
+
+---
+
+##### **Real-World Context**
+
+The inclusion of recent topics ensures that the dataset is relevant for analyzing public sentiment around current events and trends. This makes it particularly useful for real-time sentiment analysis applications.
+
+---
+
+This dataset provides an invaluable resource for researchers and practitioners aiming to explore sentiment analysis in Bangla, with a special emphasis on modern-day relevance and real-world applicability.
 
 ### Directory Structure
 
