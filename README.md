@@ -1,12 +1,25 @@
-## ml-workflow-template
+# Investigating the Impact of Sentiment Label Imbalance on Model Performance in Bangla Sentiment Analysis
 
-This project is a machine learning workflow template that provides a structured approach to building, training, and deploying machine learning models.
+## Research Problem
+
+Sentiment analysis models often suffer from degraded performance when trained on datasets with imbalanced class distributions, where certain sentiment labels (e.g., Positive, Negative, or Neutral) dominate. In the context of the Bangla Sentiment Dataset, which includes diverse sources like newspapers, social media, and blogs, such imbalances are likely due to the real-world nature of the data (e.g., social media may skew Negative due to criticism). This issue is particularly pronounced in low-resource languages like Bangla, where limited labeled data exacerbates the challenge, yet little research has explored effective mitigation strategies for Bangla sentiment analysis.
+
+## Research Aim
+
+To investigate the impact of class imbalance on the performance of sentiment classification models using the Bangla Sentiment Dataset and to evaluate the effectiveness of techniques such as oversampling, undersampling, and weighted loss functions in improving model accuracy and robustness across diverse Bangla text sources.
+
+## Research Question
+
+How does class imbalance in the Bangla Sentiment Dataset affect sentiment classification performance, and can techniques like oversampling (e.g., SMOTE), undersampling, or weighted loss functions mitigate these effects to improve model accuracy and generalization?
+
+
 
 ### Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Directory Structure](#directory-structure)
+
 - [Contributing](#contributing)
 - [License](#license)
 
