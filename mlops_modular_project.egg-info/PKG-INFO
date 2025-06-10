@@ -1,0 +1,114 @@
+Metadata-Version: 2.4
+Name: mlops_modular_project
+Version: 0.1.0
+Summary: A modular MLOps Pipeline Project
+Home-page: your-github-repo
+Author: Your Name
+Author-email: yourmail@example.com
+Classifier: Development Status :: 3 - Beta
+Classifier: Intended Audience :: ML Engineers
+Classifier: Programming Language :: Python >= 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: kaggle
+Requires-Dist: dvc
+Requires-Dist: jupyter
+Requires-Dist: feast
+Requires-Dist: mlflow
+Requires-Dist: flask
+Provides-Extra: dev
+Requires-Dist: pytest>=7.1.1; extra == "dev"
+Requires-Dist: pytest-cov>=2.12.1; extra == "dev"
+Requires-Dist: flake8>=3.9.0; extra == "dev"
+Requires-Dist: black>=22.3.0; extra == "dev"
+Requires-Dist: isort>=5.10.1; extra == "dev"
+Requires-Dist: mypy>=0.942; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+## ml-workflow-template
+
+This project is a machine learning workflow template that provides a structured approach to building, training, and deploying machine learning models.
+
+### Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Directory Structure](#directory-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+### Installation
+
+To set up the project, clone the repository and run the `folder_structure_setup.sh` script to create the necessary directories and files.
+
+To install virtual environment:
+
+```bash
+python3 -m venv venv
+```
+
+To activate the Python virtual environment, navigate to the project directory in your terminal and run the following command:
+
+```bash
+source venv/bin/activate
+export PYTHONPATH=~/your_path_to_directory/directory_name
+```
+
+To install all packages from requirements.txt, run the following command:
+
+```bash
+pip install -e .
+```
+
+### Usage
+
+First run the the setup python file to initialize:
+
+```bash
+python3 setup.py
+```
+
+### Directory Structure
+
+```bash
+├── data-source
+├── src
+│   ├── __init__.py
+│   ├── components
+│   │   ├── __init__.py
+│   │   ├── data_ingestion.py
+│   │   ├── data_transformation.py
+│   │   ├── model_monitoring.py
+│   │   └── model_trainer.py
+│   ├── exception.py
+│   ├── logger.py
+│   ├── pipelines
+│   │   ├── __init__.py
+│   │   ├── prediction_pipeline.py
+│   │   └── training_pipeline.py
+│   └── utils.py
+├── .gitignore
+├── main.py
+├── app.py
+├── EDA.ipynb
+├── README.md
+├── requirements.txt
+├── folder_structure_setup.sh
+├── test-logging-integration.py
+└── test-request.py
+```
