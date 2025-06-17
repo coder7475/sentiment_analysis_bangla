@@ -11,18 +11,21 @@ Classifier: Programming Language :: Python >= 3.8
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
-Requires-Dist: numpy
-Requires-Dist: pandas
 Requires-Dist: openpyxl
 Requires-Dist: matplotlib
-Requires-Dist: scikit-learn
 Requires-Dist: seaborn
-Requires-Dist: kaggle
 Requires-Dist: dvc
 Requires-Dist: jupyter
 Requires-Dist: feast
 Requires-Dist: mlflow
 Requires-Dist: flask
+Requires-Dist: bnlp_toolkit
+Requires-Dist: transformers>=4.50.0
+Requires-Dist: torch>=2.5.0
+Requires-Dist: pandas>=2.3.0
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: scikit-learn>=1.6.0
+Requires-Dist: tqdm>=4.66.4
 Provides-Extra: dev
 Requires-Dist: pytest>=7.1.1; extra == "dev"
 Requires-Dist: pytest-cov>=2.12.1; extra == "dev"
@@ -80,7 +83,6 @@ To activate the Python virtual environment, navigate to the project directory in
 
 ```bash
 source venv/bin/activate
-export PYTHONPATH=~/your_path_to_directory/directory_name
 ```
 
 To install all packages from requirements.txt, run the following command:
