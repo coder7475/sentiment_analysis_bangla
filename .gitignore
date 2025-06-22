@@ -2,4 +2,4 @@
 venv/
 env/
 ENV/
-models/baseline_models/banglabert_baseline
+models/
