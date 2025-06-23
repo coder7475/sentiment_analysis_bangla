@@ -1,5 +1,5 @@
 ,LogisticRegression,SVM,NaiveBayes,RandomForest
-best_params,"{'C': 1, 'max_iter': 1000, 'multi_class': 'multinomial', 'penalty': 'l2', 'solver': 'lbfgs'}","{'C': 10, 'kernel': 'rbf'}",{'alpha': 0.5},"{'max_depth': None, 'min_samples_split': 5, 'n_estimators': 200}"
+best_params,"{'C': 1, 'max_iter': 1000, 'multi_class': 'multinomial', 'penalty': 'l2', 'solver': 'lbfgs'}","{'C': 10, 'kernel': 'rbf'}",{'alpha': 0.5},"{'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 200}"
 accuracy,0.5935483870967742,0.5935483870967742,0.6167741935483871,0.5780645161290323
 f1_weighted,0.5776403089462474,0.5817237043525518,0.5934538948870072,0.5542696842520165
 f1_per_class,[0.68304094 0.46938776 0.49376559],[0.6811071  0.49180328 0.49275362],[0.71061453 0.47826087 0.49604222],[0.67410714 0.44599303 0.44686649]
