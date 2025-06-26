@@ -1,0 +1,30 @@
+📊 Imbalance Effects Analysis
+=================================
+Baseline models show low Positive class F1:
+  - Mean F1_Positive: 0.509
+  - Std Dev F1_Positive: 0.023
+
+Mitigated models improve Positive F1, especially with techniques like SMOTE and Weighted Loss:
+
+Mitigation                       tuned
+Model                                 
+LogisticRegression_nearmiss      0.500
+LogisticRegression_smote         0.504
+LogisticRegression_undersampled  0.524
+LogisticRegression_weighted      0.480
+NaiveBayes_nearmiss              0.528
+NaiveBayes_smote                 0.475
+NaiveBayes_undersampled          0.523
+NaiveBayes_weighted              0.475
+RandomForest_nearmiss            0.513
+RandomForest_smote               0.484
+RandomForest_undersampled        0.544
+RandomForest_weighted            0.484
+SVM_nearmiss                     0.531
+SVM_smote                        0.521
+SVM_undersampled                 0.540
+SVM_weighted                     0.519
+
+Recommendations:
+- Use SMOTE or Weighted Loss for imbalanced classification tasks.
+- Consider additional metrics like precision/recall per class for deeper insight.
